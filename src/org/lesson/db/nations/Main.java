@@ -127,12 +127,11 @@ public class Main {
 				
 				try (ResultSet rs = ps.executeQuery()) {
 				
-					System.out.println("Ricerca piu recente: ");
+					System.out.println("ULTIMA RICERA POPOLAZIONE");
 					if(rs.next()) {
-						
-						 String year = rs.getString("anno");
-						 String pop = rs.getString("popolazione");
-						 String gdp = rs.getString("gdp");
+						String year = rs.getString("anno");
+						String pop = rs.getString("popolazione");
+						String gdp = rs.getString("gdp");
 						System.out.println("Anno: " + year);
 						System.out.println("Popolazione: " + pop);
 						System.out.println("GDP: " + gdp);
